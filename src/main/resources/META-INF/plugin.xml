@@ -24,9 +24,9 @@
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity  implementation = "com.shuzijun.leetcode.plugin.listener.RegisterPluginInstallerStateListener"></postStartupActivity>
         <errorHandler implementation="com.shuzijun.leetcode.plugin.listener.ErrorReportHandler"/>
-        <toolWindow id="Leetcode" secondary="false" icon="LeetCodeEditorIcons.LEETCODE_TOOL_WINDOW" anchor="left"
+        <toolWindow id="RUN" secondary="false" icon="LeetCodeEditorIcons.LEETCODE_TOOL_WINDOW" anchor="left"
                     factoryClass="com.shuzijun.leetcode.plugin.window.WindowFactory" />
-        <toolWindow id="Leetcode Console" secondary="false" icon="LeetCodeEditorIcons.LEETCODE_TOOL_WINDOW" anchor="bottom"
+        <toolWindow id="RUN Console" secondary="false" icon="LeetCodeEditorIcons.LEETCODE_TOOL_WINDOW" anchor="bottom"
                     factoryClass="com.shuzijun.leetcode.plugin.window.ConsoleWindowFactory" />
         <applicationService serviceInterface="com.shuzijun.leetcode.plugin.setting.PersistentConfig"
                             serviceImplementation="com.shuzijun.leetcode.plugin.setting.PersistentConfig"/>
@@ -34,7 +34,7 @@
                         serviceImplementation="com.shuzijun.leetcode.plugin.setting.ProjectConfig"/>
         <projectService serviceInterface="com.shuzijun.leetcode.plugin.setting.StatisticsData"
                         serviceImplementation="com.shuzijun.leetcode.plugin.setting.StatisticsData"/>
-        <applicationConfigurable groupId="tools" displayName="LeetCode Plugin" id="leetcode.id"
+        <applicationConfigurable groupId="tools" displayName="RUN Plugin" id="leetcode.id"
                                  instance="com.shuzijun.leetcode.plugin.setting.SettingConfigurable"/>
         <statusBarWidgetFactory id="leetcode-editor-TimerStatusBar" implementation="com.shuzijun.leetcode.plugin.timer.TimerStatusBarWidgetProvider"/>
         <lang.foldingBuilder language="JAVA" implementationClass="com.shuzijun.leetcode.plugin.language.ScopeFoldingBuilder"/>

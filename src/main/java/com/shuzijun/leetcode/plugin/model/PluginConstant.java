@@ -14,8 +14,8 @@ public class PluginConstant {
      * 通知分组
      */
     public static final String NOTIFICATION_GROUP = "leetcode editor";
-    public static final String TOOL_WINDOW_ID = "Leetcode";
-    public static final String CONSOLE_WINDOW_ID = "Leetcode Console";
+    public static final String TOOL_WINDOW_ID = "RUN";
+    public static final String CONSOLE_WINDOW_ID = "RUN Console";
 
     /**
      * 配置id
@@ -25,7 +25,7 @@ public class PluginConstant {
     /**
      * 配置名称
      */
-    public static final String APPLICATION_CONFIGURABLE_DISPLAY_NAME = "LeetCode Plugin";
+    public static final String APPLICATION_CONFIGURABLE_DISPLAY_NAME = "RUN Plugin";
 
 
     public static final String ACTION_PREFIX = "leetcode";

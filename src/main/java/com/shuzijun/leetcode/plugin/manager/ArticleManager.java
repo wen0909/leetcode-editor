@@ -88,8 +88,9 @@ public class ArticleManager {
                 JSONArray edges = JSONObject.parseObject(response.getBody()).getJSONObject("data").getJSONObject("questionSolutionArticles").getJSONArray("edges");
                 for (int i = 0; i < edges.size(); i++) {
                     JSONObject node = edges.getJSONObject(i).getJSONObject("node");
+                    String title = node.getString("title");
                     Solution solution = new Solution();
-                    solution.setTitle(node.getString("title"));
+                    solution.setTitle(title.substring(0, Math.min(3, title.length())) + "*******");
                     solution.setSlug(node.getString("slug"));
                     solution.setSummary(node.getString("summary"));
 

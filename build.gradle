@@ -56,12 +56,6 @@ intellij {
         pluginDescription = new File(project.pluginDescription).getText('UTF-8')
         changeNotes.set(provider { changelog.get(project.version+".0").toHTML() })
     }
-
-    publishPlugin {
-        dependsOn("patchChangelog")
-        token = System.getenv("PUBLISH_TOKEN")
-    }
-
 }
 
 changelog {
